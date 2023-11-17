@@ -13,9 +13,17 @@
     </Design.DataContext>
     <Grid Background="LightGray" RowDefinitions="Auto, *, Auto">
         <!-- Nav Bar -->
-        <Grid Grid.Row="0">
-            <Label>File</Label>
-        </Grid>
+        <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open..."/>
+                <Separator/>
+                <MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Copy"/>
+                <MenuItem Header="Paste"/>
+            </MenuItem>
+        </Menu>
 
         <!-- Main Area -->
         <Grid Grid.Row="1" Margin="10" Background="White">
