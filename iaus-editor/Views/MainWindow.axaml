@@ -8,5 +8,5 @@
         x:Class="InfiniteAxisUtility.Editor.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="InfiniteAxisUtility.Editor">
-        <views:MainView />
+    <views:MainView />
 </Window>
