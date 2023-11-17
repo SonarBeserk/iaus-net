@@ -58,23 +58,3 @@
 		}
 	}
 }
-
-/*
- * 		switch (Category) {
-			case Category.CategoryIdle:
-				score *= 1.0;
-				break;
-			case Category.CategorySurvival:
-				score *= 1.5;
-				break;
-			case Category.CategoryCombat:
-				score *= 2.0;
-				break;
-			case Category.CategoryEmergency:
-				score *= 5.0;
-				break;
-			case Category.CategoryUnknown:
-			default:
-				throw new InvalidEnumArgumentException("Category is unknown");
-		}
- */
