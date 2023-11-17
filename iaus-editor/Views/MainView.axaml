@@ -21,26 +21,49 @@
         <Grid Grid.Row="1" Margin="10" Background="White">
             <TabControl Margin="5">
                 <TabItem Header="Behaviors">
-                    <Grid ColumnDefinitions="*, *">
+                    <Grid ColumnDefinitions="*, 2*">
                         <Grid RowDefinitions="Auto, *, Auto">
                             <Label Grid.Column="0" Grid.Row="0">Behavior Name</Label>
                               <ListBox Grid.Column="0" Grid.Row="1">
                             </ListBox>
-                            <Button Grid.Column="0" Grid.Row="2" Margin="0, 5, 0, 0">Add</Button>
+                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+                                <Button Margin="0, 5, 5, 0">Add</Button>
+                                <Button Margin="0, 5, 5, 0">Delete</Button>
+                            </StackPanel>
                         </Grid>
                         <Panel Grid.Column="1" Height="300" Width="300">
-                            <Rectangle Fill="Red" Height="100" VerticalAlignment="Top"/>
-                            <Rectangle Fill="Blue" Opacity="0.5" Width="100" HorizontalAlignment="Right" />
-                            <Rectangle Fill="Green" Opacity="0.5" Height="100" VerticalAlignment="Bottom"/>
-                            <Rectangle Fill="Orange" Width="100" HorizontalAlignment="Left"/>
                         </Panel>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Behavior Sets">
-                    <TextBlock Margin="5">This is tab 2 content</TextBlock>
+                    <Grid ColumnDefinitions="*, 2*">
+                        <Grid RowDefinitions="Auto, *, Auto">
+                            <Label Grid.Column="0" Grid.Row="0">Behavior Set Name</Label>
+                            <ListBox Grid.Column="0" Grid.Row="1">
+                            </ListBox>
+                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+                                <Button Margin="0, 5, 5, 0">Add</Button>
+                                <Button Margin="0, 5, 5, 0">Delete</Button>
+                            </StackPanel>
+                        </Grid>
+                        <Panel Grid.Column="1" Height="300" Width="300">
+                        </Panel>
+                    </Grid>
                 </TabItem>
                 <TabItem Header="Response Curves">
-                    <TextBlock Margin="5">This is tab 3 content</TextBlock>
+                    <Grid ColumnDefinitions="*, 2*">
+                        <Grid RowDefinitions="Auto, *, Auto">
+                            <Label Grid.Column="0" Grid.Row="0">Response Curve Name</Label>
+                            <ListBox Grid.Column="0" Grid.Row="1">
+                            </ListBox>
+                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+                                <Button Margin="0, 5, 5, 0">Add</Button>
+                                <Button Margin="0, 5, 5, 0">Delete</Button>
+                            </StackPanel>
+                        </Grid>
+                        <Panel Grid.Column="1" Height="300" Width="300">
+                        </Panel>
+                    </Grid>
                 </TabItem>
             </TabControl>
         </Grid>
