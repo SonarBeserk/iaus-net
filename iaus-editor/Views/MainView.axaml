@@ -59,19 +59,16 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Response Curves">
-                    <Grid ColumnDefinitions="*, 2*">
-                        <Grid RowDefinitions="Auto, *, Auto">
-                            <Label Grid.Column="0" Grid.Row="0">Response Curve Name</Label>
-                            <ListBox Grid.Column="0" Grid.Row="1">
-                            </ListBox>
-                            <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
-                                <Button Margin="0, 5, 5, 0">Add</Button>
-                                <Button Margin="0, 5, 5, 0">Delete</Button>
-                            </StackPanel>
-                        </Grid>
-                        <Panel Grid.Column="1" Height="300" Width="300">
-                        </Panel>
-                    </Grid>
+                  <StackPanel Margin="10">
+                      <Label>Curve Type</Label>
+                      <ComboBox Width="200" MaxDropDownHeight="300" ItemsSource="{Binding PresetCurves}" SelectedIndex="{Binding SelectedPresetCurve}">
+                          <ComboBox.ItemTemplate>
+                              <DataTemplate>
+                                  <TextBlock Text="{Binding }" />
+                              </DataTemplate>
+                          </ComboBox.ItemTemplate>
+                      </ComboBox>
+                  </StackPanel>
                 </TabItem>
             </TabControl>
         </Grid>
