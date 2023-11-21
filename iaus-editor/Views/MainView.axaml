@@ -11,9 +11,9 @@
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel />
     </Design.DataContext>
-    <Grid RowDefinitions="Auto, *, Auto">
+    <Grid RowDefinitions="Auto, *, Auto" Background="LightGray">
         <!-- Nav Bar -->
-        <Grid Grid.Row="0" Background="LightGray" Height="35">
+        <Grid Grid.Row="0" Height="35">
             <Menu>
                 <MenuItem Header="_File">
                     <MenuItem Header="_Open..."/>
@@ -59,9 +59,9 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Response Curves">
-                  <Grid RowDefinitions="Auto, Auto, *" ShowGridLines="True">
+                  <Grid RowDefinitions="Auto, Auto, *">
                       <Label Grid.Row="0">Curve Type</Label>
-                      <ComboBox Grid.Row="1" MaxDropDownHeight="300" ItemsSource="{Binding PresetCurves}" SelectedIndex="{Binding SelectedPresetCurve}">
+                      <ComboBox Grid.Row="1" Width="200" MaxDropDownHeight="300" ItemsSource="{Binding PresetCurves}" SelectedIndex="{Binding SelectedPresetCurve}">
                           <ComboBox.ItemTemplate>
                               <DataTemplate>
                                   <TextBlock Text="{Binding }" />
