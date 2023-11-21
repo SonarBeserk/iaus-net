@@ -11,9 +11,9 @@
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel />
     </Design.DataContext>
-    <StackPanel>
+    <Grid RowDefinitions="Auto, *, Auto">
         <!-- Nav Bar -->
-        <Grid Background="LightGray">
+        <Grid Grid.Row="0" Background="LightGray" Height="35">
             <Menu>
                 <MenuItem Header="_File">
                     <MenuItem Header="_Open..."/>
@@ -28,7 +28,7 @@
         </Grid>
 
         <!-- Main Area -->
-        <Grid Background="White">
+        <Grid Grid.Row="1" Background="White">
             <TabControl>
                 <TabItem Header="Behaviors">
                     <Grid ColumnDefinitions="*, 2*" RowDefinitions="Auto, *, Auto">
@@ -59,7 +59,7 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Response Curves">
-                  <Grid RowDefinitions="Auto, Auto">
+                  <Grid RowDefinitions="Auto, Auto, *" ShowGridLines="True">
                       <Label Grid.Row="0">Curve Type</Label>
                       <ComboBox Grid.Row="1" MaxDropDownHeight="300" ItemsSource="{Binding PresetCurves}" SelectedIndex="{Binding SelectedPresetCurve}">
                           <ComboBox.ItemTemplate>
@@ -68,15 +68,18 @@
                               </DataTemplate>
                           </ComboBox.ItemTemplate>
                       </ComboBox>
+                      <Panel Grid.Row="2">
+                          <Label>Test</Label>
+                      </Panel>
                   </Grid>
                 </TabItem>
             </TabControl>
         </Grid>
 
         <!-- Footer Area -->
-        <Grid ColumnDefinitions="Auto, Auto" Background="White">
+        <Grid Grid.Row="2" ColumnDefinitions="Auto, Auto" Background="White">
             <Label Grid.Column="0">Wiki</Label>
             <Label Grid.Column="1">Utility Theory Crash Course</Label>
         </Grid>
-    </StackPanel>
+    </Grid>
 </UserControl>
