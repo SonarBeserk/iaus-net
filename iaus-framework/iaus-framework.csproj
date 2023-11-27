@@ -51,6 +51,9 @@
     <Compile Include="..\iaus-standard\Examples\ExampleConsideration.cs">
       <Link>Examples\ExampleConsideration.cs</Link>
     </Compile>
+    <Compile Include="..\iaus-standard\Project.cs">
+      <Link>Project.cs</Link>
+    </Compile>
     <Compile Include="..\iaus-standard\ResponseCurve.cs">
       <Link>ResponseCurve.cs</Link>
     </Compile>
