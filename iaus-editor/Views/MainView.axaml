@@ -33,10 +33,10 @@
         <Grid Grid.Row="1" Background="White">
             <TabControl>
                 <TabItem Header="Behaviors">
-                    <controls:BehaviorEditor DataContext="{Binding BehaviorEditor }"></controls:BehaviorEditor>
+                    <controls:BehaviorEditor></controls:BehaviorEditor>
                 </TabItem>
                 <TabItem Header="Behavior Sets">
-                    <controls:BehaviorSetEditor DataContext="{Binding BehaviorSetEditor}"></controls:BehaviorSetEditor>
+                    <controls:BehaviorSetEditor></controls:BehaviorSetEditor>
                 </TabItem>
                 <TabItem Header="Response Curves">
                     <controls:ResponseCurveEditor DataContext="{Binding ResponseCurveEditor }"/>

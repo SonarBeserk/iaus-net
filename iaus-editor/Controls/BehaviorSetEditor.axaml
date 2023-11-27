@@ -5,11 +5,11 @@
              xmlns:vm="using:InfiniteAxisUtility.Editor.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="InfiniteAxisUtility.Editor.Controls.BehaviorSetEditor"
-             x:DataType="vm:BehaviorSetEditorViewModel">
+             x:DataType="vm:MainViewModel">
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:BehaviorSetEditorViewModel/>
+        <vm:MainViewModel/>
     </Design.DataContext>
     <Grid ColumnDefinitions="*, 2*" RowDefinitions="Auto, *, Auto">
         <Label Grid.Column="0" Grid.Row="0">Behavior Set Name</Label>
