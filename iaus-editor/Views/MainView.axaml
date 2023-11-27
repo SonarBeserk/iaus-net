@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
              xmlns:vm="clr-namespace:InfiniteAxisUtility.Editor.ViewModels"
+             xmlns:controls="clr-namespace:InfiniteAxisUtility.Editor.Controls"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="InfiniteAxisUtility.Editor.Views.MainView"
              x:DataType="vm:MainViewModel">
@@ -60,21 +61,7 @@
                     </Grid>
                 </TabItem>
                 <TabItem Header="Response Curves">
-                  <Grid RowDefinitions="Auto, Auto, *">
-                      <Label Grid.Row="0">Curve Type</Label>
-                      <ComboBox Grid.Row="1" Width="200" MaxDropDownHeight="300" ItemsSource="{Binding PresetCurves}" SelectedIndex="{Binding SelectedPresetCurve}">
-                          <ComboBox.ItemTemplate>
-                              <DataTemplate>
-                                  <TextBlock Text="{Binding }" />
-                              </DataTemplate>
-                          </ComboBox.ItemTemplate>
-                      </ComboBox>
-                      <Panel Grid.Row="2" Background="AliceBlue">
-                          <lvc:CartesianChart
-                              Series="{Binding Series}">
-                          </lvc:CartesianChart>
-                      </Panel>
-                  </Grid>
+                    <controls:ResponseCurveEditor DataContext="{Binding ResponseCurveEditor }"/>
                 </TabItem>
             </TabControl>
         </Grid>
