@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using LiveChartsCore;
@@ -8,13 +9,30 @@ namespace InfiniteAxisUtility.Editor.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {
-    public ObservableCollection<string> PresetCurves => new()
-    {
-        "Linear",
-        "Inverse Linear"
-    };
+    private ObservableCollection<string> _curves;
 
-    public int SelectedPresetCurve { get; set; }
+    public ObservableCollection<string> PresetCurves
+    {
+        get => _curves;
+        set => SetProperty(ref _curves, value);
+    }
+
+    public ResponseCurve.CurveType SelectedPresetCurve { get; set; }
+
+    public MainViewModel()
+    {
+        _curves = new ObservableCollection<string>();
+
+        var vals = Enum.GetNames(typeof(ResponseCurve.CurveType));
+
+        // Skip unknown value
+        for (var i = 1; i < vals.Length; i++)
+        {
+            PresetCurves.Add(vals[i]);
+        }
+
+        SelectedPresetCurve = 0;
+    }
 
     public ISeries[] Series { get; set; } = {
         new LineSeries<double>
