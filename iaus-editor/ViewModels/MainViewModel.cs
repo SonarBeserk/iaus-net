@@ -8,7 +8,12 @@ public partial class MainViewModel : ViewModelBase
     public MainViewModel()
     {
         ResponseCurveEditor = new ResponseCurveEditorViewModel();
+
+        // Initialize empty project
+        Project ??= new Project();
     }
+
+    public Project Project { get; }
 
     public ResponseCurveEditorViewModel ResponseCurveEditor { get; }
 

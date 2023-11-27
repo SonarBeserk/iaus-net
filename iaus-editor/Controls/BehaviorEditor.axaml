@@ -13,7 +13,12 @@
     </Design.DataContext>
     <Grid ColumnDefinitions="*, 2*" RowDefinitions="Auto, *, Auto">
         <Label Grid.Column="0" Grid.Row="0">Behavior Name</Label>
-        <ListBox Grid.Column="0" Grid.Row="1">
+        <ListBox Grid.Column="0" Grid.Row="1" ItemsSource="{Binding Project.Behaviors}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
         </ListBox>
         <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
             <Button Margin="0, 5, 5, 0">Add</Button>
