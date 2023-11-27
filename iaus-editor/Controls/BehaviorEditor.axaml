@@ -12,7 +12,7 @@
         <vm:BehaviorEditorViewModel />
     </Design.DataContext>
     <Grid ColumnDefinitions="*, 2*" RowDefinitions="Auto, *, Auto">
-        <Label Grid.Column="0" Grid.Row="0">Behavior Set Name</Label>
+        <Label Grid.Column="0" Grid.Row="0">Behavior Name</Label>
         <ListBox Grid.Column="0" Grid.Row="1">
         </ListBox>
         <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
