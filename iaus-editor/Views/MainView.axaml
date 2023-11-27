@@ -2,6 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
              xmlns:vm="clr-namespace:InfiniteAxisUtility.Editor.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="InfiniteAxisUtility.Editor.Views.MainView"
@@ -68,8 +69,10 @@
                               </DataTemplate>
                           </ComboBox.ItemTemplate>
                       </ComboBox>
-                      <Panel Grid.Row="2">
-                          <Label>Test</Label>
+                      <Panel Grid.Row="2" Background="AliceBlue">
+                          <lvc:CartesianChart
+                              Series="{Binding Series}">
+                          </lvc:CartesianChart>
                       </Panel>
                   </Grid>
                 </TabItem>
