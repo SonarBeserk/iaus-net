@@ -5,6 +5,9 @@
     <LangVersion>latest</LangVersion>
     <AssemblyName>InfiniteAxisUtility-Editor</AssemblyName>
     <RootNamespace>InfiniteAxisUtility.Editor</RootNamespace>
+    <Title>InfiniteAxisUtility-Editor</Title>
+    <Authors>Dyonity</Authors>
+    <Company>Dyonity</Company>
   </PropertyGroup>
 
   
