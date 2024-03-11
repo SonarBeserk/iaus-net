@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>IAUS-Net</id>
-    <version>1.0.0</version>
+    <version>0.0.0</version>
     <authors>Dyonity</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
