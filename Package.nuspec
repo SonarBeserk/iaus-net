@@ -18,8 +18,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="iaus-framework\bin\Release\iaus-framework.dll" target="lib\net48" />
-    <file src="iaus-framework\bin\Release\iaus-framework.pdb" target="lib\net48" />
+    <file src="iaus-framework\bin\Release\net48\iaus-framework.dll" target="lib\net48" />
+    <file src="iaus-framework\bin\Release\net48\iaus-framework.pdb" target="lib\net48" />
     <file src="iaus-standard\bin\Release\netstandard2.1\iaus-standard.dll" target="lib\netstandard2.1" />
     <file src="iaus-standard\bin\Release\netstandard2.1\iaus-standard.pdb" target="lib\netstandard2.1" />
     <file src="README.md" target="docs\" />
