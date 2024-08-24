@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: [self-hosted,  Windows]
     timeout-minutes: 15
     steps:
       - name: Checkout
