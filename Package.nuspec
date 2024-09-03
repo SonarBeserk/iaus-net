@@ -9,7 +9,7 @@
     <readme>docs\readme.md</readme>
     <projectUrl>https://github.com/dyonity/iaus-net</projectUrl>
     <description>Implementation of the Infinite Axis Utility System for .NET</description>
-    <releaseNotes>Initial Release.</releaseNotes>
+    <releaseNotes>Updated README with better description of the package.</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>ai</tags>
     <dependencies>
