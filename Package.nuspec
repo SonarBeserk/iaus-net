@@ -6,7 +6,7 @@
     <authors>Dyonity</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <readme>docs\readme.md</readme>
+    <readme>docs\README.md</readme>
     <projectUrl>https://github.com/dyonity/iaus-net</projectUrl>
     <description>Implementation of the Infinite Axis Utility System for .NET</description>
     <releaseNotes>Updated README with better description of the package.</releaseNotes>
