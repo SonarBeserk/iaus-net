@@ -18,10 +18,10 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="iaus-framework\bin\Release\net48\iaus-framework.dll" target="lib\net48" />
-    <file src="iaus-framework\bin\Release\net48\iaus-framework.pdb" target="lib\net48" />
-    <file src="iaus-core\bin\Release\net9.0\iaus-core.dll" target="lib\net9.0" />
-    <file src="iaus-core\bin\Release\net9.0\iaus-core.pdb" target="lib\net9.0" />
+    <file src="iaus-framework\bin\Release\net48\InfiniteAxisUtility.Framework.dll" target="lib\net48" />
+    <file src="iaus-framework\bin\Release\net48\InfiniteAxisUtility.Framework.pdb" target="lib\net48" />
+    <file src="iaus-core\bin\Release\net9.0\InfiniteAxisUtility.Framework.dll" target="lib\net9.0" />
+    <file src="iaus-core\bin\Release\net9.0\InfiniteAxisUtility.Framework.pdb" target="lib\net9.0" />
     <file src="README.md" target="docs\" />
   </files>
 </package>
