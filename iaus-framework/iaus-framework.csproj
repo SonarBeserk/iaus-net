@@ -2,10 +2,11 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <OutputType>Library</OutputType>
-    <RootNamespace>iaus_framework</RootNamespace>
+    <RootNamespace>InfiniteAxisUtility</RootNamespace>
     <Nullable>disable</Nullable>
     <RepositoryUrl>https://github.com/dyonity/iaus-net</RepositoryUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>InfiniteAxisUtility</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\iaus-standard\BehaviorProcessor.cs">

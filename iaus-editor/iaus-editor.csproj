@@ -3,7 +3,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
-    <AssemblyName>InfiniteAxisUtility-Editor</AssemblyName>
+    <AssemblyName>InfiniteAxisUtility.Editor</AssemblyName>
     <RootNamespace>InfiniteAxisUtility.Editor</RootNamespace>
     <Title>InfiniteAxisUtility-Editor</Title>
   </PropertyGroup>
