@@ -24,6 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\iaus-standard\iaus-standard.csproj" />
+    <ProjectReference Include="..\iaus-core\iaus-core.csproj" />
   </ItemGroup>
 </Project>

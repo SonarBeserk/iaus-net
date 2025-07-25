@@ -9,19 +9,19 @@
     <AssemblyName>InfiniteAxisUtility.Framework</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\iaus-standard\BehaviorProcessor.cs">
+    <Compile Include="..\iaus-core\BehaviorProcessor.cs">
       <Link>BehaviorProcessor.cs</Link>
     </Compile>
-    <Compile Include="..\iaus-standard\Examples\ExampleBehavior.cs">
+    <Compile Include="..\iaus-core\Examples\ExampleBehavior.cs">
       <Link>Examples\ExampleBehavior.cs</Link>
     </Compile>
-    <Compile Include="..\iaus-standard\Examples\ExampleConsideration.cs">
+    <Compile Include="..\iaus-core\Examples\ExampleConsideration.cs">
       <Link>Examples\ExampleConsideration.cs</Link>
     </Compile>
-    <Compile Include="..\iaus-standard\Project.cs">
+    <Compile Include="..\iaus-core\Project.cs">
       <Link>Project.cs</Link>
     </Compile>
-    <Compile Include="..\iaus-standard\ResponseCurve.cs">
+    <Compile Include="..\iaus-core\ResponseCurve.cs">
       <Link>ResponseCurve.cs</Link>
     </Compile>
   </ItemGroup>
