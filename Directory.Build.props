@@ -1,5 +1,7 @@
 <Project>
   <PropertyGroup>
-    <Nullable>enable</Nullable>
+    <Authors>SonarBeserk</Authors>
+    <RepositoryUrl>https://github.com/SonarBeserk/iaus-net</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/SonarBeserk/iaus-net</PackageProjectUrl>
   </PropertyGroup>
 </Project>

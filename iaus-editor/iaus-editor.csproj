@@ -6,11 +6,8 @@
     <AssemblyName>InfiniteAxisUtility-Editor</AssemblyName>
     <RootNamespace>InfiniteAxisUtility.Editor</RootNamespace>
     <Title>InfiniteAxisUtility-Editor</Title>
-    <Authors>Dyonity</Authors>
-    <Company>Dyonity</Company>
   </PropertyGroup>
 
-  
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>

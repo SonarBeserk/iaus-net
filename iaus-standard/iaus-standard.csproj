@@ -1,10 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <RootNamespace>InfiniteAxisUtility</RootNamespace>
         <Nullable>disable</Nullable>
         <RepositoryUrl>https://github.com/dyonity/iaus-net</RepositoryUrl>
     </PropertyGroup>
-
 </Project>

@@ -10,8 +10,6 @@
     <RootNamespace>InfiniteAxisUtility.Editor.Desktop</RootNamespace>
     <AssemblyName>InfiniteAxisUtility.Editor</AssemblyName>
     <Title>InfiniteAxisUtility Editor</Title>
-    <Authors>Dyonity</Authors>
-    <Company>Dyonity</Company>
     <Product>InfiniteAxisUtility-Editor.Desktop</Product>
     <PackageId>InfiniteAxisUtility-Editor.Desktop</PackageId>
   </PropertyGroup>
