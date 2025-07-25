@@ -3,11 +3,11 @@
   <metadata>
     <id>IAUS-Net</id>
     <version>0.0.0</version>
-    <authors>Dyonity</authors>
+    <authors>SonarBeserk</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <readme>docs\README.md</readme>
-    <projectUrl>https://github.com/dyonity/iaus-net</projectUrl>
+    <projectUrl>https://github.com/SonarBeserk/iaus-net</projectUrl>
     <description>Implementation of the Infinite Axis Utility System for .NET</description>
     <releaseNotes>Updated README with better description of the package.</releaseNotes>
     <copyright>$copyright$</copyright>
