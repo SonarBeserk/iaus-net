@@ -4,6 +4,6 @@
         <RootNamespace>InfiniteAxisUtility</RootNamespace>
         <Nullable>disable</Nullable>
         <RepositoryUrl>https://github.com/dyonity/iaus-net</RepositoryUrl>
-        <AssemblyName>InfiniteAxisUtility</AssemblyName>
+        <AssemblyName>InfiniteAxisUtility.Standard</AssemblyName>
     </PropertyGroup>
 </Project>

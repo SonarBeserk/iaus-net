@@ -6,7 +6,7 @@
     <Nullable>disable</Nullable>
     <RepositoryUrl>https://github.com/dyonity/iaus-net</RepositoryUrl>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>InfiniteAxisUtility</AssemblyName>
+    <AssemblyName>InfiniteAxisUtility.Framework</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\iaus-standard\BehaviorProcessor.cs">

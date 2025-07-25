@@ -8,7 +8,7 @@
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <RootNamespace>InfiniteAxisUtility.Editor.Desktop</RootNamespace>
-    <AssemblyName>InfiniteAxisUtility.Editor</AssemblyName>
+    <AssemblyName>InfiniteAxisUtility.Editor.Desktop</AssemblyName>
     <Title>InfiniteAxisUtility Editor</Title>
     <Product>InfiniteAxisUtility-Editor.Desktop</Product>
     <PackageId>InfiniteAxisUtility-Editor.Desktop</PackageId>
