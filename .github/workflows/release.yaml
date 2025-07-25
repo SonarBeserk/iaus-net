@@ -25,6 +25,6 @@ jobs:
     - name: Pack
       run: nuget pack -Version $env:VERSION -Properties Configuration=Release -OutputDirectory .
     - name: Push
-      run: dotnet nuget push IAUS-Net.$env:VERSION.nupkg --source https://nuget.pkg.github.com/dyonity/index.json --api-key $env:GITHUB_TOKEN
+      run: dotnet nuget push IAUS-Net.$env:VERSION.nupkg --source https://nuget.pkg.github.com/SonarBeserk/index.json --api-key $env:GITHUB_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
