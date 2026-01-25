@@ -8,7 +8,7 @@
 		/// <summary>
 		/// The name of the consideration (Hunger, Fatigue, ect)
 		/// </summary>
-		public string Name
+		string Name
 		{
 			get;
 			set;
@@ -17,7 +17,7 @@
 		/// <summary>
 		/// The mathematical equation used to model the data
 		/// </summary>
-		public ResponseCurve Curve
+		ResponseCurve Curve
 		{
 			get;
 			set;
@@ -27,7 +27,7 @@
 		/// Normalize calculates the score based on the curve type
 		/// </summary>
 		/// <returns>double between 0.0 and 1.0</returns>
-		public double Calculate();
+		double Calculate();
 	}
 
 	/// <summary>
