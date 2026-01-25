@@ -12,9 +12,9 @@ Multiple versions of the library are provided to support usage by multiple game 
 
 A single package is published on the [Github Nuget Feed](https://github.com/SonarBeserk/iaus-net/pkgs/nuget/IAUS-Net) that will install the .NetFramework or .NetStandard version as needed automatically. You can setup the [Nuget Feed by following the Github Docs](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry).
 
-### Standard Library
+### Core Library
 
-The Standard library targets .NetStandard 2.1 which is the standard version supported by .Net 5+. This version is supported by both [Godot's .Net Version](https://godotengine.org/article/platform-state-in-csharp-for-godot-4-2/) and [Unity projects targeting newer api versions](https://learn.microsoft.com/en-us/visualstudio/gamedev/unity/unity-scripting-upgrade).
+The Core library targets .Net 8.0. This version is supported by both [Godot's .Net Version](https://godotengine.org/article/platform-state-in-csharp-for-godot-4-2/) and [Unity projects targeting newer api versions](https://learn.microsoft.com/en-us/visualstudio/gamedev/unity/unity-scripting-upgrade).
 
 ### Framework Library
 
