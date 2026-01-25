@@ -10,13 +10,20 @@ permissions:
   contents: read
   pull-requests: read
 
+env:
+  DOTNET_VERSION: 8.0
+
 jobs:
   build:
-    runs-on: [self-hosted,  Windows]
+    runs-on: windows-latest
     timeout-minutes: 15
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+      - name: Setup dotnet ${{ env.DOTNET_VERSION }}
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
       - name: Build
         run: dotnet build --configuration Release
       - name: Test
