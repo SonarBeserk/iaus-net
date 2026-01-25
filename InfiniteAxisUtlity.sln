@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core", "core\core.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "framework", "framework\framework.csproj", "{ECE2065F-AE3B-4621-B2C8-1AE1E14BD327}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iaus-editor", "iaus-editor\iaus-editor.csproj", "{7477B895-4F3F-4580-B7B6-569C0D988C66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "editor", "editor\editor.csproj", "{7477B895-4F3F-4580-B7B6-569C0D988C66}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iaus-editor.Desktop", "iaus-editor.Desktop\iaus-editor.Desktop.csproj", "{E15E0223-F7F8-43BB-B1A0-3B956B414C03}"
 EndProject

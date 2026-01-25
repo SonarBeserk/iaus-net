@@ -20,6 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\iaus-editor\iaus-editor.csproj" />
+    <ProjectReference Include="..\editor\editor.csproj" />
   </ItemGroup>
 </Project>
