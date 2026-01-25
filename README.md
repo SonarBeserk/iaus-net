@@ -10,7 +10,7 @@ TODO
 
 Multiple versions of the library are provided to support usage by multiple game engines such as Unity and Godot. The primary codebase is the .NetStandard version which the . NetFramework version replaces some files due to C# language incompatibilities.
 
-A single package is published on the [Dyonity Nuget Feed](https://github.com/dyonity/iaus-net/pkgs/nuget/IAUS-Net) that will install the .NetFramework or .NetStandard version as needed automatically. .Net 5+ projects will default to the .NetStandard version. You can setup the [Nuget Feed by following the Github Docs](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry).
+A single package is published on the [Github Nuget Feed](https://github.com/SonarBeserk/iaus-net/pkgs/nuget/IAUS-Net) that will install the .NetFramework or .NetStandard version as needed automatically. You can setup the [Nuget Feed by following the Github Docs](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry).
 
 ### Standard Library
 
