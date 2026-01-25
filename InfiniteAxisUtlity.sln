@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "editor", "editor\editor.csproj", "{7477B895-4F3F-4580-B7B6-569C0D988C66}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iaus-editor.Desktop", "iaus-editor.Desktop\iaus-editor.Desktop.csproj", "{E15E0223-F7F8-43BB-B1A0-3B956B414C03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "editor.Desktop", "editor.Desktop\editor.Desktop.csproj", "{E15E0223-F7F8-43BB-B1A0-3B956B414C03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csproj", "{0588859C-5863-4D4F-80FF-4458395445D0}"
 EndProject
