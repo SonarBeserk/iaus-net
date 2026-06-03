@@ -21,7 +21,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      rubocop:
+      avalonia:
         patterns:
           - "Avaloni*"
           - "AvaloniUI*"
