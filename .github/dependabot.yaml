@@ -20,3 +20,8 @@ updates:
       semver-patch-days: 3
     schedule:
       interval: "weekly"
+    groups:
+      rubocop:
+        patterns:
+          - "Avaloni*"
+          - "AvaloniUI*"
