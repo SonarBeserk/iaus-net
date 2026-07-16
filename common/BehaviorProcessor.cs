@@ -1,21 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace InfiniteAxisUtility
 {
     public class BehaviorProcessor
     {
-        private readonly List<IBehavior> _behaviors;
+        private readonly Dictionary<string, IBehavior> _behaviors;
         private Type _lastBehavior;
 
-        public BehaviorProcessor(List<IBehavior> behaviors)
+        public BehaviorProcessor()
         {
-            _behaviors = behaviors;
+            _behaviors = new Dictionary<string, IBehavior>();
         }
 
-        public BehaviorProcessor(BehaviorSet behaviorSet)
+        public BehaviorProcessor(List<IBehavior> behaviors) : this()
         {
-            _behaviors = behaviorSet.Behaviors;
+            foreach (var behavior in behaviors)
+            {
+                _behaviors.Add(behavior.GetType().Name, behavior);
+            }
+        }
+
+        public BehaviorProcessor(BehaviorSet behaviorSet) : this(behaviorSet.Behaviors)
+        {
+        }
+
+        public void AddBehavior(IBehavior behavior)
+        {
+            _behaviors.Add(behavior.GetType().Name, behavior);
+        }
+
+        public void RemoveBehavior(IBehavior behavior)
+        {
+            _behaviors.Remove(behavior.GetType().Name);
+        }
+
+        public void ClearBehaviors()
+        {
+            _behaviors.Clear();
+        }
+
+        public void AddBehaviorsFromSet(BehaviorSet behaviorSet)
+        {
+            foreach (var behavior in behaviorSet.Behaviors)
+            {
+                _behaviors.Add(behavior.GetType().Name, behavior);
+            }
+        }
+        
+        public void RemoveBehaviorsFromSet(BehaviorSet behaviorSet)
+        {
+            foreach (var behavior in behaviorSet.Behaviors)
+            {
+                _behaviors.Remove(behavior.GetType().Name);
+            }
         }
 
         public IBehavior FindNextBehavior()
@@ -24,9 +63,9 @@ namespace InfiniteAxisUtility
             IBehavior bestBehavior = null;
 
             // Attempt to sort and run higher category behaviors first
-            _behaviors.Sort();
+            var behaviors = _behaviors.Values.OrderBy(b => b.Category);
 
-            foreach (var behavior in _behaviors)
+            foreach (var behavior in behaviors)
             {
                 double bonus = 0.0;
 
