@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.0
       - name: Setup dotnet ${{ env.DOTNET_VERSION }}
-        uses: actions/setup-dotnet@v5
+        uses: actions/setup-dotnet@v6
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
       - name: Build
