@@ -11,7 +11,6 @@ public partial class App : Application
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
-
 #if DEBUG
         this.AttachDeveloperTools();
 #endif
@@ -25,6 +24,11 @@ public partial class App : Application
             {
                 DataContext = new MainViewModel()
             };
+        }
+        else if (ApplicationLifetime is IActivityApplicationLifetime singleViewFactoryApplicationLifetime)
+        {
+            singleViewFactoryApplicationLifetime.MainViewFactory =
+                () => new MainView { DataContext = new MainViewModel() };
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
