@@ -4,6 +4,8 @@
     <option name="projectPerEditor">
       <map>
         <entry key="editor/Controls/BehaviorEditor.axaml" value="editor.Desktop/editor.Desktop.csproj" />
+        <entry key="editor/Views/MainView.axaml" value="editor.Desktop/editor.Desktop.csproj" />
+        <entry key="editor/Views/MainWindow.axaml" value="editor.Desktop/editor.Desktop.csproj" />
       </map>
     </option>
   </component>
